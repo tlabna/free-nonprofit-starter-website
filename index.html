@@ -300,15 +300,24 @@ layout: default
         </p>
         {% if site.donorbox_campaign_name %}
         <div class="donorbox text-center">
+          <script
+            src="https://dboxm.com/widget.js"
+            paypalExpress="true"
+          ></script>
           <iframe
-            src="https://donorbox.org/embed/{{ site.donorbox_campaign_name }}"
-            height="600px"
-            width="100%"
-            style="max-width: 500px; min-width: 310px"
-            seamless="seamless"
-            name="donorbox"
+            allowpaymentrequest=""
             frameborder="0"
+            height="900px"
+            name="donorbox"
             scrolling="no"
+            seamless="seamless"
+            src="https://dboxm.com/embed/non-profit-1?default_interval=o&show_content=true"
+            style="
+              max-width: 100%;
+              min-width: 100%;
+              max-height: none !important;
+            "
+            width="100%"
           ></iframe>
         </div>
         {% if site.501c3 == true %}
